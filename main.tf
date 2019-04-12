@@ -286,7 +286,7 @@ resource "aws_ami_from_instance" "checkout_golden" {
 cat <<EOF > userdata.sh
 #!/bin/bash
 /bin/touch /var/spool/cron/root
-sudo /bin/echo '*/10 * * * * git pull origin/master /var/www/html/' >> /var/spool/cron/root
+sudo /bin/echo '*/10 * * * * /usr/bin/sh /home/ec2-user/pull.sh' >> /var/spool/cron/root
 EOF
 EOT
   }
