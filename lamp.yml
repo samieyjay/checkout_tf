@@ -14,6 +14,10 @@
       git:
         repo: https://github.com/samieyjay/checkout-web.git
         dest: /var/www/html
+    - name: Download shell script for cronjob
+      get_url:
+        url: https://github.com/samieyjay/checkout_tf/blob/master/pull.sh
+        dest: /home/ec2-user/pull.sh
     - name: Change www directory ownership
       file:
         path: /var/www/html/

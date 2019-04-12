@@ -1,6 +1,6 @@
 localip                 = "0.0.0.0/0"
-aws_access_key	= "AKIAIMLCLTYDJCZHNDCA"
-aws_secret_key = "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"
+aws_access_key	= ""
+aws_secret_key = ""
 aws_region		= "eu-west-2"
 vpc_cidr                = "10.0.0.0/16"
 cidrs			= {
